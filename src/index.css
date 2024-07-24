@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+  body {
+    @apply bg-gradient-to-r from-fuchsia-500 to-blue-600 font-bold font-comic
+  }
+
+  h1.status {
+    @apply from-orange-500 to-yellow-400 bg-gradient-to-r text-white text-3xl mb-40 py-2 mx-auto flex justify-center w-72 rounded-xl pt-4 -mt-2
+  }
+
+  button.square {
+    @apply m-2 text-white/50 bg-violet-400/30 rounded-3xl size-40 text-9xl items-center transition ease-out hover:scale-110
+  }
+
+  button.history {
+    @apply px-2 mb-2 py-1 bg-blue-600 text-white rounded transition ease-out mx-auto flex
+  }
+
+}
