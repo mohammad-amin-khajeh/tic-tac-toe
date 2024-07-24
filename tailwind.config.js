@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				comic: ["comic neue", "comic code", "Caskaydiacove nf"],
+				comic: ["comic code", "comic neue", "Caskaydiacove nf"],
 			},
 		},
 	},
