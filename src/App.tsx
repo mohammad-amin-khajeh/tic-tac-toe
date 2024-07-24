@@ -37,7 +37,7 @@ export default function Game() {
 
 	return (
 		<>
-			<Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+			<Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} moveNumber={currentMove} />
 			<div className="mt-8">
 				<ol>{moves}</ol>
 			</div>
