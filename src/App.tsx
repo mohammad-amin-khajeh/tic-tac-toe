@@ -49,9 +49,7 @@ export default function Game() {
 				Reset
 			</button>
 
-			<div className="mt-8">
 				<ol>{moves}</ol>
-			</div>
 		</>
 	);
 }

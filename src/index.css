@@ -24,7 +24,7 @@
   }
 
   button.reset {
-    @apply px-2 py-1 bg-green-500 text-white rounded-lg flex mx-auto mt-4 text-2xl
+    @apply px-2 py-1 bg-green-500 text-white rounded-lg flex mx-auto my-6 text-2xl
     hover:bg-white hover:text-green-500 hover:scale-110
     transition-all ease-out
   }
