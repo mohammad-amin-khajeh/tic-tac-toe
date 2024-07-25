@@ -12,7 +12,7 @@
   }
 
   h1.status {
-    @apply from-orange-500 to-yellow-400 bg-gradient-to-r text-white text-3xl mb-40 py-2 mx-auto flex justify-center w-72 rounded-xl pt-4 -mt-2
+    @apply from-orange-500 to-yellow-400 bg-gradient-to-r text-white text-3xl mb-20 py-2 mx-auto flex justify-center w-72 rounded-xl pt-4 -mt-2
   }
 
   button.square {
