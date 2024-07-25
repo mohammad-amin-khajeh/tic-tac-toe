@@ -19,7 +19,9 @@ export default function Game() {
 
 	const moves = history.map((squares, move) => {
 		let description;
-		if (move == currentMove && move !== 0) {
+		if (move === 0) {
+			return;
+		} else if (move == currentMove && move !== 0) {
 			description = "you are at move #" + move;
 		} else if (move > 0) {
 			description = "go to move #" + move;
@@ -43,6 +45,9 @@ export default function Game() {
 				onPlay={handlePlay}
 				moveNumber={currentMove}
 			/>
+			<button className="reset" onClick={() => jumpTo(0)}>
+				Reset
+			</button>
 
 			<div className="mt-8">
 				<ol>{moves}</ol>

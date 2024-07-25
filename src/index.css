@@ -23,4 +23,10 @@
     @apply px-2 mb-2 py-1 bg-blue-600 text-white rounded transition ease-out mx-auto flex
   }
 
+  button.reset {
+    @apply px-2 py-1 bg-green-500 text-white rounded-lg flex mx-auto mt-4 text-2xl
+    hover:bg-white hover:text-green-500 hover:scale-110
+    transition-all ease-out
+  }
+
 }
