@@ -5,7 +5,11 @@ import { TrackStatus, CurrentStatus } from "./status";
 export default function Board({ xIsNext, squares, onPlay, moveNumber }) {
 	// tracking the status of the game
 	const potentialWinner = CalculateWinner(squares);
-	const currentStatus: string = CurrentStatus(potentialWinner, xIsNext, moveNumber);
+	const currentStatus: string = CurrentStatus(
+		potentialWinner,
+		xIsNext,
+		moveNumber,
+	);
 
 	const handleClick = (index: number) => {
 		if (squares[index] || CalculateWinner(squares)) {
