@@ -49,7 +49,7 @@ export default function Game() {
 				Reset
 			</button>
 
-				<ol>{moves}</ol>
+			<ol>{moves}</ol>
 		</>
 	);
 }
