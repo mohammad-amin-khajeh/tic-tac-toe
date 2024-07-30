@@ -9,11 +9,13 @@ function CurrentStatus(
 ) {
 	if (potentialWinner) {
 		return "winner: " + potentialWinner;
-	} else if (currentMove === 9) {
-		return "Draw!";
-	} else {
-		return "Next Player: " + (xIsNext ? "X" : "O");
 	}
+
+	if (currentMove === 9) {
+		return "Draw!";
+	}
+
+	return "Next Player: " + (xIsNext ? "X" : "O");
 }
 
 export { TrackStatus, CurrentStatus };
