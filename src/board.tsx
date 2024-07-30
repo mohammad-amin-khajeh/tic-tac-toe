@@ -1,6 +1,6 @@
 import { Square } from "./square";
 import { CalculateWinner } from "./CalculateWinner";
-import { TrackStatus, CurrentStatus } from "./status";
+import { CurrentStatus } from "./status";
 
 export default function Board({ xIsNext, squares, onPlay, moveNumber }) {
 	// tracking the status of the game
@@ -27,9 +27,7 @@ export default function Board({ xIsNext, squares, onPlay, moveNumber }) {
 
 	return (
 		<>
-			<h1 className="status">
-				<TrackStatus status={currentStatus} />
-			</h1>
+			<h1 className="status">{currentStatus}</h1>
 			<div className="flex justify-center">
 				<Square value={squares[0]} onSqaureClick={() => handleClick(0)} />
 				<Square value={squares[1]} onSqaureClick={() => handleClick(1)} />

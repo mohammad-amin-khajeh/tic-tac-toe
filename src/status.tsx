@@ -1,7 +1,3 @@
-function TrackStatus({ status }: { status: string | null }) {
-	return status;
-}
-
 function CurrentStatus(
 	potentialWinner: number | null,
 	xIsNext: boolean,
@@ -18,4 +14,4 @@ function CurrentStatus(
 	return "Next Player: " + (xIsNext ? "X" : "O");
 }
 
-export { TrackStatus, CurrentStatus };
+export { CurrentStatus };
